@@ -15,6 +15,11 @@ body, html {
   background-color:#fafafa;
 }
 
+div {
+    
+    min-width: 200px;
+}
+
 /* Header */
 
 header {
