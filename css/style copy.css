@@ -15,11 +15,6 @@ body, html {
   background-color:#fafafa;
 }
 
-div {
-    
-    min-width: 200px;
-}
-
 /* Header */
 
 header {
@@ -154,14 +149,14 @@ a:hover {
 
 /* Content Part */
 
-.content-wrapper {
+.content bg {
   padding-right:7.25%;
 }
 
 .content {
   display:table;
   width:100%;
-  
+  min-width: 200px;
   padding-top:1.5em;
   
   /*border-top: 1px solid #eeeeee;*/
@@ -325,14 +320,6 @@ a.inlink {
 .content-text.skills-listing > ul > li span {
   font-weight:400;
   color: #616161;
-}
-
-.content-text.skills-listing > ul > li > .highlight {
-  
-  font-size:1em;
-  font-weight:400;
-  
-  margin-left:1.25em;
 }
 
 .highlight {
