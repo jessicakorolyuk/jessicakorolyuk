@@ -1,5 +1,39 @@
+
+@import url('https://fonts.googleapis.com/css?family=Advent+Pro|Bungee|Bungee+Hairline|Chivo');
+
 body {
   background: url("../img/tree_bark.png");
       
       }
+div.nav {
+    position: static;
+     padding-top: 0px;
+    border-bottom-width: 100px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-bottom: 130px; 
+    margin-left: 30%:
+    
+}
+.nav {
+    font-family: 'bungee hairline', sans-serif;
+    font-size: 1.5em;
+    display: inline-block;
+    padding: 3em;
+    text-align: center;
+    background: rgba(76, 101, 115, .5); 
+    
+}
+a,
+a:visited {
+
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    cursor: pointer;
+    color: lightblue;
+    text-decoration-line: overline;
+}
 

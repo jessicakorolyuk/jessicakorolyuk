@@ -5,20 +5,15 @@
 body {
   background: url("../img/city.jpg");
 background-size: 100%;
-background-attachment: fixed;
-background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-    
+    background-attachment: fixed;
+    background-repeat: no-repeat;
       }
 
 body, html {
   
   margin:0;
   background-color:#fafafa;
- }
+}
 
 /* Header */
 
@@ -36,11 +31,10 @@ header {
 .pic {
   margin: 0px;
   margin-top:-8em;
-  display: flex;
+  
   border-radius:10em;
   height:15em;
   width:15em;
-    max-width:100%; 
   background-size: 100% auto;
   background-image: url(../img/jessi.jpg);
     border: 15px solid white;
@@ -68,7 +62,12 @@ header {
 }
 
 .pic:hover {
-   animation: shake 0.82s; 
+  /*Webkit fix*/
+   animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+
 }
 
 .header-text {
@@ -102,7 +101,7 @@ header p {
 /*NAVIGATION*/
 
 div.nav {
-    position: static;
+    text-align: center;
      padding-top: 0px;
     border-bottom-width: 100px;
     padding-top: 3px;
@@ -127,11 +126,7 @@ a:visited {
     color: white;
 }
 
-a:hover {
-    cursor: pointer;
-    color: lightblue;
-    text-decoration-line: overline;
-}
+
 
 
 /* Information */
@@ -141,23 +136,23 @@ a:hover {
   margin-bottom:1em;
   
   background-color:white;
-  width: 70%;
-  padding:0.5em 0 0.5em 0;
+  width:70%;
   
-  border-radius:3px;
+  padding:0.5em 1em 0.5em 0;
+  
+  border-radius:5px;
 }
 
 /* Content Part */
 
 .content bg {
   padding-right:7.25%;
-    min-width: 700px;
 }
 
 .content {
   display:table;
   width:100%;
-  min-width: 90%;
+  min-width: 200px;
   padding-top:1.5em;
   
   /*border-top: 1px solid #eeeeee;*/
@@ -177,7 +172,7 @@ a:hover {
 .content-cat {
   font-family: 'bungee hairline', cursive;
   font-variant:small-caps;
-  font-weight:9000;
+  
   letter-spacing: 1px;
   
   color: #212121;
@@ -207,7 +202,7 @@ a:hover {
 }
 
 .big-text {
-  vertical-align:top;
+  vertical-align: middle;
   
   padding-top:1.25em;
 }
@@ -222,7 +217,7 @@ a:hover {
 }
 
 .content-text ul:last-child {
-  margin-bottom:0.5em;
+  margin-bottom:.5em;
 }
 
 .content-text ul li {
@@ -239,7 +234,6 @@ a:hover {
   color: #424242;
   
   font-weight:600;
-  font-size:0.75;
 }
 
 .content-text ul li a {
@@ -247,9 +241,7 @@ a:hover {
   color: #8ba5bd;
 }
 
-.content-text ul li a:hover {
-  color:#b37450;
-}
+
 
 p {
     
@@ -294,22 +286,13 @@ p {
   margin-left:3.25em;
 }
 
-.content-text.skills-listing > ul {
-  display:table-row;
-}
 
-.content-text.skills-listing > ul:last-child {
-  margin-bottom:0;
-}
 
 .content-text.skills-listing > ul > li {
-  display:table-cell;
-  vertical-align:top;
+  display: block;
   
   padding-left:2em;
-  
-  width:50%;
-  font-weight:600;
+  width: auto;
 }
 
 a.inlink {
@@ -317,34 +300,5 @@ a.inlink {
     color:#8ba5bd;
 }
 
-.content-text.skills-listing > ul > li span {
-  font-weight:400;
-  color: #616161;
-}
-/*MEDIA QUERIES!!!*/
-/* Mobile: 320px = 20em */
-@media screen and (min-width: 20em) { 
-
-  /* Diagnostic Styling. */
-	.paper {
-       width: 90%;
-	}
-    
-    
-}
-
-/* Tablet:  768px = 160em */
-@media screen and (min-width: 48em)  {
-
-  /* Diagnostic Styling. */
 
 
-}
-
-/* Desktop: 1280px = 80em */
-@media screen and (min-width: 80em) { 
-  
-  /* Diagnostic Styling. */
- 
-
-}
