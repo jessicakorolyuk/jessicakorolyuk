@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Advent+Pro|Bungee|Bungee+Hairline|Chivo');
 
 body {
-  background: url("../img/city.jpg");
+  background: url("../img/city2.jpg");
     background-size: 100%;
 background-attachment: fixed;
 background-repeat: no-repeat;
@@ -52,17 +52,25 @@ a:hover {
   width: 70%;
   padding:0.5em 0 0.5em 0;
   border-radius:3px;
+
 }
 
-form, .placeholder{
-    
+p {
     font-family: bungee hairline;
-    text-align: center;
+    color: firebrick;
+    text-shadow: white;
+}
+
+form {
+    margin: 100px;
 }
 
 form div + div {
     margin-top: 1em;
+   
 }
+
+
 input, textarea {
     font: 1em bungee hairline;
 
@@ -71,8 +79,18 @@ input, textarea {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     border: 1px solid firebrick;
+
 }
-}
+
+
+#submit_button 
+{ font-family: bungee}
+
+#submit_button:hover
+{background-color: firebrick}
+
+
+
 /*MEDIA QUERIES!!!*/
 /* Mobile: 320px = 20em */
 @media screen and (min-width: 20em) { 
