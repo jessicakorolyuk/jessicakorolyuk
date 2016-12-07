@@ -1,12 +1,15 @@
 
 @import url('https://fonts.googleapis.com/css?family=Advent+Pro|Bungee|Bungee+Hairline|Chivo');
 
-.body {
-    
-    background: url("../img/city.jpg");
-}
 body {
-  background: url("../img/tree_bark.png");
+  background: url("../img/city.jpg");
+    background-size: 100%;
+background-attachment: fixed;
+background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
       
       }
 div.nav {
@@ -51,20 +54,30 @@ a:hover {
   border-radius:3px;
 }
 
-h3 {
-    font-family: bungee;
-    color: firebrick;
-    text-align: center;
-}
-p {
+/*MEDIA QUERIES!!!*/
+/* Mobile: 320px = 20em */
+@media screen and (min-width: 20em) { 
+
+  /* Diagnostic Styling. */
+	.paper {
+       min-width: 100%;
+	}
     
-    font-family: 'chivo', sans-serif;
-    text-align: center;
-    font-size: .9em;
+    
 }
 
-.anchor {
-    font-family: bungee hairline;
-    color: firebrick;
-    background-color: gray
+/* Tablet:  768px = 160em */
+@media screen and (min-width: 48em)  {
+
+  /* Diagnostic Styling. */
+
+
+}
+
+/* Desktop: 1280px = 80em */
+@media screen and (min-width: 80em) { 
+  
+  /* Diagnostic Styling. */
+ 
+
 }

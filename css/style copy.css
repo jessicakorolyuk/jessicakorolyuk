@@ -5,15 +5,20 @@
 body {
   background: url("../img/city.jpg");
 background-size: 100%;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+background-attachment: fixed;
+background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    
       }
 
 body, html {
   
   margin:0;
   background-color:#fafafa;
-}
+ }
 
 /* Header */
 
@@ -31,12 +36,13 @@ header {
 .pic {
   margin: 0px;
   margin-top:-8em;
-  
+  display: flex;
   border-radius:10em;
   height:15em;
   width:15em;
+    max-width:100%; 
   background-size: 100% auto;
-  background-image: url(../img/jessi.jpg);
+  background-image: url(../img/portrait.jpg);
     border: 15px solid white;
   
   
@@ -62,12 +68,7 @@ header {
 }
 
 .pic:hover {
-  /*Webkit fix*/
-   animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-  transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
-  perspective: 1000px;
-
+   animation: shake 0.82s; 
 }
 
 .header-text {
@@ -140,8 +141,7 @@ a:hover {
   margin-bottom:1em;
   
   background-color:white;
-  width:70%;
-  
+  width: 70%;
   padding:0.5em 0 0.5em 0;
   
   border-radius:3px;
@@ -151,12 +151,13 @@ a:hover {
 
 .content bg {
   padding-right:7.25%;
+    min-width: 700px;
 }
 
 .content {
   display:table;
   width:100%;
-  min-width: 200px;
+  min-width: 90%;
   padding-top:1.5em;
   
   /*border-top: 1px solid #eeeeee;*/
@@ -279,7 +280,6 @@ p {
   margin-left:3.25em;
   padding-left:0.5em;
   
-  border-left:1px solid #e0e0e0;
   
 }
 
@@ -321,11 +321,30 @@ a.inlink {
   font-weight:400;
   color: #616161;
 }
+/*MEDIA QUERIES!!!*/
+/* Mobile: 320px = 20em */
+@media screen and (min-width: 20em) { 
 
-.highlight {
-  transition: border .33s ease-in;
+  /* Diagnostic Styling. */
+	.paper {
+       width: 90%;
+	}
+    
+    
 }
 
-.highlight:hover, .content-text.skills-listing > ul > li > .highlight:hover {
-  border-left:1px solid #cb4154;
+/* Tablet:  768px = 160em */
+@media screen and (min-width: 48em)  {
+
+  /* Diagnostic Styling. */
+
+
+}
+
+/* Desktop: 1280px = 80em */
+@media screen and (min-width: 80em) { 
+  
+  /* Diagnostic Styling. */
+ 
+
 }

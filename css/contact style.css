@@ -1,0 +1,102 @@
+
+@import url('https://fonts.googleapis.com/css?family=Advent+Pro|Bungee|Bungee+Hairline|Chivo');
+
+body {
+  background: url("../img/city.jpg");
+    background-size: 100%;
+background-attachment: fixed;
+background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+      
+      }
+div.nav {
+    position: static;
+     padding-top: 0px;
+    border-bottom-width: 100px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-left: 30%:
+    
+}
+.nav {
+    font-family: 'bungee hairline', sans-serif;
+    font-size: 1.5em;
+    display: inline-block;
+    padding: 3em;
+    text-align: center;
+    background: rgba(76, 101, 115, .5); 
+    
+}
+a,
+a:visited {
+
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    cursor: pointer;
+    color: lightblue;
+    text-decoration-line: overline;
+}
+
+.paper {
+  margin: 0 auto;
+  margin-bottom:1em;
+    margin-top: 1em;
+  position: static;
+  background-color:white;
+  width: 70%;
+  padding:0.5em 0 0.5em 0;
+  border-radius:3px;
+}
+
+form, .placeholder{
+    
+    font-family: bungee hairline;
+    text-align: center;
+}
+
+form div + div {
+    margin-top: 1em;
+}
+input, textarea {
+    font: 1em bungee hairline;
+
+    /* To give the same size to all text field */
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid firebrick;
+}
+}
+/*MEDIA QUERIES!!!*/
+/* Mobile: 320px = 20em */
+@media screen and (min-width: 20em) { 
+
+  /* Diagnostic Styling. */
+	.paper {
+       min-width: 100%;
+	}
+    
+    
+}
+
+/* Tablet:  768px = 160em */
+@media screen and (min-width: 48em)  {
+
+  /* Diagnostic Styling. */
+
+
+}
+
+/* Desktop: 1280px = 80em */
+@media screen and (min-width: 80em) { 
+  
+  /* Diagnostic Styling. */
+ 
+
+}
