@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Advent+Pro|Bungee|Bungee+Hairline|Chivo');
 
 body {
-  background: url("../img/city.jpg");
+  background: url("../img/tree_bark.png");
     background-size: 100%;
 background-attachment: fixed;
 background-repeat: no-repeat;
@@ -43,15 +43,13 @@ a:hover {
     text-decoration-line: overline;
 }
 
-.paper {
-  margin: 0 auto;
-  margin-bottom:1em;
-    margin-top: 1em;
-  position: static;
-  background-color:white;
-  width: 70%;
-  padding:0.5em 0 0.5em 0;
-  border-radius:3px;
+
+.flex-grid {
+  display: flex;
+    flex-direction: row;
+}
+.col {
+  flex: 1;
 }
 
 /*MEDIA QUERIES!!!*/
