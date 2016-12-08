@@ -78,6 +78,8 @@ width: 200px;
     border-radius: 7em;
 }
 
+.thumb img:hover {border: 1px solid rgba(255, 255, 255, 0.61);}
+
 .overlay img {
         max-width: 90%;
     max-height: 80%;
@@ -120,6 +122,25 @@ width: 100%;
   color: firebrick;
   text-decoration: none;
   font-size: 4em;
+}
+
+.overlay a:hover {
+    color: white;
+    animation: spin 2s;
+    transition: color ease-in 1s;
+}
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
 }
 
 
