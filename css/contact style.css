@@ -59,10 +59,14 @@ p {
     font-family: bungee hairline;
     color: firebrick;
     text-shadow: white;
+   -webkit-text-stroke: 1px firebrick;
+    text-shadow: 0px 0px 4px rgba(255, 255, 255, 1);
 }
+
 
 form {
     margin: 100px;
+    text-align: center;
 }
 
 form div + div {
@@ -97,7 +101,7 @@ input, textarea {
 
   /* Diagnostic Styling. */
 	.paper {
-       min-width: 100%;
+       width: 320px;
 	}
     
     

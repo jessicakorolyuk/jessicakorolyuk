@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Advent+Pro|Bungee|Bungee+Hairline|Chivo');
 
 body {
-  background: url("../img/tree_bark.png");
+  background: url("../img/neighborhood.jpg");
     background-size: 100%;
 background-attachment: fixed;
 background-repeat: no-repeat;
@@ -12,12 +12,14 @@ background-repeat: no-repeat;
   background-size: cover;
       
       }
+
+/*NAVIGATION*/
+
 div.nav {
     position: static;
      padding-top: 0px;
-    border-bottom-width: 100px;
     padding-top: 3px;
-    padding-bottom: 3px;
+    padding-bottom: 3px; 
     margin-left: 30%:
     
 }
@@ -43,14 +45,84 @@ a:hover {
     text-decoration-line: overline;
 }
 
+/* Global */
+* {
+  box-sizing: border-box;
+}
 
-.flex-grid {
+/* Layout with Flexbox */
+.gallery {
+ display: flex;
+ flex-flow: row wrap;
+}
+
+
+figure {
+  /* Note: Figures have default 1em margin. Optionally override. */
+  padding: 2em;
+    border-radius: 4px;
+  /* Set `flex-basis` to any value */
+  flex: 1 0 300px;
+  
+  /* Child & Also Parent   */
   display: flex;
-    flex-direction: row;
+  flex-flow:row wrap;
+  justify-content:center;
+  align-items: center;
 }
-.col {
-  flex: 1;
+
+/* Specific Gallery Styling. Have Fun! */
+.thumb img {
+width: 200px;
+    padding: 1em;
+    border-radius: 7em;
 }
+
+.overlay img {
+        max-width: 90%;
+    max-height: 80%;
+    margin-top: 2%;
+     box-shadow: 0 0 400px white;
+}
+
+
+/* Lightbox Overlay */
+/* hide  */
+.overlay {
+  display: none;
+width: 100%;
+  
+/* Overlay Styling   */
+  background: none;
+  width:100%;
+  height:100%;
+  position:fixed;
+  top:0;
+  left:0;
+  
+}
+
+/* show */
+.overlay:target {
+  display: block;
+ 
+  /* Flexbox Vertical & Horizontal Centering */
+  display: flex;
+  flex-direction: row;
+    flex-direction: row-reverse;
+  min-height: 50px;
+  justify-content: center;
+  align-items:center;
+}
+
+/* Close Button  */
+.overlay a {
+  color: firebrick;
+  text-decoration: none;
+  font-size: 4em;
+}
+
+
 
 /*MEDIA QUERIES!!!*/
 /* Mobile: 320px = 20em */
