@@ -86,6 +86,9 @@ input, textarea {
 
 }
 
+div #msg 
+{height: 300px}
+
 
 #submit_button 
 { font-family: bungee}
